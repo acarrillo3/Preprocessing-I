@@ -49,10 +49,47 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=McLaren|Nanum+Gothic&display=swap');
+@body-font:'McLaren', cursive;
+@h-fonts: 'Nanum Gothic', sans-serif;
+@main-color: orange;
+
 * {
-    box-sizing: border-box;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	border:1px solid gray;
 }
 
 html, body {
 	height: 100%;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5rem;
+	font-family: @body-font;
+	line-height:2;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1, h2, h3, h4 {
+	font-family: @h-fonts;
+	color: @main-color;
+	letter-spacing:3px;
+  	padding:4% 0;
+}
+section {
+	padding: 4% 0;
+}
+//header styles
+
+header {
+	height: 30vh;
+	background-color: white;
+	border: 2px red solid;
+	border-radius: 20px;
+	margin: 5%;
 }

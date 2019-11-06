@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Ana Carrillo's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -12,8 +12,101 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
+  <!-- Resume structure here  -->
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <header>
+      <nav>
+        <h1>My Resume</h1>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- one -->
+    <section id="about">
+      <div class="intro">
+        <h1>Ana Carrillo</h1>
+        <h2>Full-Stack Web Developer</h2>
+        <h3>Atlanta, GA.</h3>
+        <p>I'm self-motivated, fast learner, and confident that my past experience will reflect well into the position you are offering and I am excited to begin this new chapter in my career. </p>
+      </div>
+    </section>
+    <!-- two -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="container">
+        <div>
+          <!-- how do i add a logo for html here -->
+          <h2>HTML</h2>
+          <p>Created structured website layouts with semantic HTML.</p> 
+        </div>
+        <div>
+          <!-- logo for css -->
+          <h2>CSS</h2>
+          <p>Created styles to the layouts website using media query so that in can be accessible to all types of users.</p>
+        </div>
+        <div>
+          <h2>JavaScript</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo accusantium consequuntur dolores facere.</p>
+        </div>
+      </div>
+    </section>
+    <!-- three -->
+    <section id="experience">
+      <div class="big-box">
+        <div class="column-one">
+          <h3>Airbus</h3>
+          <h4>Software Developer</h4>
+        </div>
+        <div class="column-two">
+          <img src="" alt="">
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas laudantium voluptatum, est fugiat sunt laboriosam saepe architecto asperiores quam? Cumque, error. Ducimus deserunt repellendus officia, provident blanditiis ea.</p>
+        </div>
+      </div>
+      <div class="big-box">
+        <div class="column-one">
+          <h3> Google</h3>
+          <h4>Software Developer</h4>
+        </div>
+        <div class="column-two">
+          <img src="" atl="">
+        </div>
+        <div class="column-three">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsum, provident officia odit eius dolorum harum quos error minima debitis asperiores velit libero reiciendis saepe in veniam vero cupiditate dignissimos.</p>
+        </div>
+      </div>
+      <div class="big-box">
+        <div class="column-one">
+          <h3>Apple</h3>
+          <h4>Software Developer</h4>
+        </div>
+        <div class="column-two">
+          <img src="" alt="">
+        </div>
+        <div class="column-three">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati saepe distinctio laudantium inventore quam voluptate minus architecto, dicta exercitationem similique repellat omnis, in repudiandae voluptatem soluta tempore aut! Facere, quos.</p>
+        </div>
+      </div>
+    </section>
+    <!-- four -->
+    <footer id="contact">
+      <h2>Get In Touch</h2>
+      <div>
+          <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+            <label for="name">Your Name</label>
+            <input type="name" name="name">
+            <label for="email">Your Email</label>
+            <input type="email" name="email">
+            <label for="message">Your Message</label>
+            <textarea name="message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+      </div>
+
+    </footer>
+  </body>
 </html>

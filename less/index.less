@@ -63,7 +63,10 @@ table {
 	padding: 3%;
 	background-color: white;
 }
-
+.flexbox() {
+	display: flex;
+	align-items: center;
+}
 * {
 	box-sizing:border-box;
 	padding:0;
@@ -105,8 +108,7 @@ header {
 	height: 20vh;
 	.borders();
 	nav {
-		display: flex;
-		align-items: center;
+		.flexbox();
 		justify-content: space-between;
 	}//this closes the nav
 }// this close the header
@@ -124,10 +126,8 @@ header {
 //one
 .intro {
 	height:80vh;
-	display:flex;
-	// flex-direction:column;
+	.flexbox();
 	justify-content:space-evenly;
-	align-items:center;
 	text-align:center;
 	.borders();
 	.pic {
@@ -183,10 +183,9 @@ header {
 }//end of experience
 
 .big-box {
-	display:flex;
+	.flexbox();
 	flex-direction:row;
 	justify-content: space-evenly;
-	align-items:center;
 	border-bottom: 1px solid yellow;
 
 	h4 {

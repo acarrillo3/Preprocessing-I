@@ -175,9 +175,14 @@ section {
   padding: 4% 0;
 }
 header {
-  height: 30vh;
+  height: 20vh;
   background-color: white;
   border: 2px red solid;
   border-radius: 20px;
   margin: 5%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

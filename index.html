@@ -17,8 +17,10 @@
   <body>
     <header>
       <nav>
-        <h1>My Resume</h1>
         <div>
+        <h1>My Resume</h1>
+        </div>
+        <div class="navbar">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
@@ -29,11 +31,16 @@
     <!-- one -->
     <section id="about">
       <div class="intro">
-        <h1>Ana Carrillo</h1>
-        <h2>Full-Stack Web Developer</h2>
-        <h3>Atlanta, GA.</h3>
-        <p>I'm self-motivated, fast learner, and confident that my past experience will reflect well into the position you are offering and I am excited to begin this new chapter in my career. </p>
-      </div>
+        <div>
+          <img class="pic" src="img/mypic.jpg" alt="My Profle Picture">
+        </div>
+        <div>        
+          <h1>Ana Carrillo</h1>
+          <h2>Full-Stack Web Developer<br>Atlanta, GA.</h2>
+          <p>I'm self-motivated, fast learner, and confident that my past experience will reflect well into the position you are offering and I am excited to begin this new chapter in my career. </p>
+          <button class="portfolio"><a href="https://acarrillo3.github.io/" target="_blank">My Portfolio</a></button>
+        </div>
+       </div>
     </section>
     <!-- two -->
     <section id="skills">
@@ -41,31 +48,33 @@
       <div class="container">
         <div>
           <!-- how do i add a logo for html here -->
-          <h2>HTML</h2>
+          <h3>HTML</h3>
           <p>Created structured website layouts with semantic HTML.</p> 
         </div>
         <div>
           <!-- logo for css -->
-          <h2>CSS</h2>
+          <h3>CSS</h3>
           <p>Created styles to the layouts website using media query so that in can be accessible to all types of users.</p>
         </div>
+        <!-- same -->
         <div>
-          <h2>JavaScript</h2>
+          <h3>JavaScript</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo accusantium consequuntur dolores facere.</p>
         </div>
       </div>
     </section>
     <!-- three -->
     <section id="experience">
+      <h2>Experience</h2>
       <div class="big-box">
         <div class="column-one">
           <h3>Airbus</h3>
           <h4>Software Developer</h4>
         </div>
         <div class="column-two">
-          <img src="img/Airbus.jpg" alt="Photo by G-R Mottez on Unsplash">
+          <img class="logos" src="img/Airbus.jpg" alt="Photo by G-R Mottez on Unsplash">
         </div>
-        <div>
+        <div class="column-three">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas laudantium voluptatum, est fugiat sunt laboriosam saepe architecto asperiores quam? Cumque, error. Ducimus deserunt repellendus officia, provident blanditiis ea.</p>
         </div>
       </div>
@@ -75,7 +84,7 @@
           <h4>Software Developer</h4>
         </div>
         <div class="column-two">
-          <img src="img/google.jpg" atl="Photo by Paweł Czerwiński on Unsplash">
+          <img class="logos" src="img/google.jpg" atl="Photo by Paweł Czerwiński on Unsplash">
         </div>
         <div class="column-three">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsum, provident officia odit eius dolorum harum quos error minima debitis asperiores velit libero reiciendis saepe in veniam vero cupiditate dignissimos.</p>
@@ -87,7 +96,7 @@
           <h4>Software Developer</h4>
         </div>
         <div class="column-two">
-          <img src="img/apple.jpg" alt="Photo by Julian O'hayon on Unsplash">
+          <img class="logos" src="img/apple.jpg" alt="Photo by Julian O'hayon on Unsplash">
         </div>
         <div class="column-three">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati saepe distinctio laudantium inventore quam voluptate minus architecto, dicta exercitationem similique repellat omnis, in repudiandae voluptatem soluta tempore aut! Facere, quos.</p>

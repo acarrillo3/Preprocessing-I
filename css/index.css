@@ -219,6 +219,20 @@ header nav {
   border-top: 1px solid black;
   font-size: 1.5rem;
 }
+.intro p {
+  width: 80%;
+  padding-left: 20%;
+}
+.intro .portfolio {
+  width: 40%;
+  background-color: purple;
+  padding: 2% 0;
+  border: 2px solid #fde769;
+  margin: 3%;
+}
+.intro .portfolio a {
+  color: white;
+}
 #skills {
   display: flex;
   flex-direction: column;
@@ -272,4 +286,47 @@ header nav {
   width: 80%;
   text-align: justify;
   padding-left: 2%;
+}
+footer {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+  margin: 4% 0;
+  text-align: center;
+}
+footer h2 {
+  border-bottom: 1px solid grey;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div form {
+  width: 80%;
+}
+footer div form input,
+footer div form label,
+footer div form textarea {
+  width: 100%;
+  margin: 4% 0;
+}
+footer div form input,
+footer div form textarea {
+  border: none;
+  border-bottom: 3px solid #616161;
+  background-color: #ffffff;
+}
+footer div form button {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  padding: 2% 0;
+  border: 2px solid #fde769;
+  margin-bottom: 3%;
+}
+footer div form button:hover {
+  background-color: #eeaeca;
+  color: #00CED1;
+  border: 2px solid #00CED1;
 }

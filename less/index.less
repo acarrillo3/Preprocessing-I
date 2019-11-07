@@ -138,7 +138,20 @@ header {
 		border-top:1px solid black;
 		font-size: 1.5rem;
 	}// end of h2
-//might add a style to the button .portfolio
+	p {
+		width: 80%;
+		padding-left: 20%;
+	}
+	.portfolio {
+		width:40%;
+		background-color:@main-color;
+		padding: 2% 0;
+		border: 2px solid #fde769;
+		margin:3%;
+		a {
+			color: white;
+		}//end of a
+	}//end off portfolio
 }// this end the intro
 //two
 #skills {
@@ -193,3 +206,42 @@ header {
 		padding-left: 2%;
 	}
 }//end of bigbox
+footer{
+	.borders();
+	margin:4% 0;
+	text-align:center;
+		h2 {
+			border-bottom: 1px solid grey;
+		}//end of h2
+		div {
+			display:flex;
+			justify-content:center;
+		form {
+			width:80%;
+				input, label, textarea {
+				width:100%;
+				margin:4% 0;
+				} //end of input
+				input, textarea{
+				border:none;
+				border-bottom:3px solid rgb(97, 97, 97);
+				background-color:rgb(255, 255, 255);
+				}//end of textarea
+				button{
+					width:100%;
+					background-color:@main-color;
+					color:white;
+					padding: 2% 0;
+					border: 2px solid #fde769;
+					margin-bottom:3%;
+				  }
+				  button:hover{
+					background-color:@back-color2;
+					color:#00CED1;
+					border:2px solid #00CED1;
+				  }
+			}//end of form
+		}//end off div
+  }//end of footer
+
+  //how can i make the nave scroll down as i am scrolling down

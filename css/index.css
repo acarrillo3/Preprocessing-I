@@ -253,11 +253,23 @@ header nav {
 }
 .big-box {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  border-bottom: 1px solid yellow;
+}
+.big-box h4 {
+  font-size: 1.5rem;
 }
 .big-box .column-one {
   width: 100%;
   text-align: center;
+}
+.big-box .column-two {
+  width: 25vw;
+}
+.big-box .column-three {
+  width: 80%;
+  text-align: justify;
+  padding-left: 2%;
 }

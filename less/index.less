@@ -49,11 +49,231 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=McLaren|Nanum+Gothic&display=swap');
+//variables
+@body-font:'McLaren', cursive;
+@h-fonts: 'Nanum Gothic', sans-serif;
+@main-color: purple;
+@back-color:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+@back-color2:rgb(238,174,202);
+//mixins
+.borders() {
+	border: 1px solid grey;
+	border-radius: 20px;
+	padding: 3%;
+	background-color: white;
+}
+.flexbox() {
+	display: flex;
+	align-items: center;
+}
 * {
-    box-sizing: border-box;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	border:1px solid gray;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+html {
+	font-size: 62.5%;
+	margin:5%;
 
+}
+body {
+	font-size: 2.5rem;
+	font-family: @body-font;
+	line-height:2;
+	background: @back-color2;
+	background: @back-color;
+}
+h1, h2, h3, h4 {
+	font-family: @h-fonts;
+	color: @main-color;
+	letter-spacing:3px;
+  	padding:4% 0;
+}
+p {
+	font-size: 1.5rem;
+}
+section {
+	padding: 4% 0;
+}
+//header styles
+
+header {
+	height: 20vh;
+	.borders();
+	nav {
+		.flexbox();
+		justify-content: space-between;
+	}//this closes the nav
+}// this close the header
+
+.navbar {
+	width:60%;
+	display: flex;
+	justify-content: space-evenly;
+	:hover {
+		color:@main-color;
+		background-color: @back-color2;
+		border-radius: 15px;
+	}//this ends the hover sstyle
+}//this ends the nav bar
+//one
+.intro {
+	height:80vh;
+	.flexbox();
+	justify-content:space-evenly;
+	text-align:center;
+	.borders();
+	.pic {
+		width: 40vw;
+		border-radius: 20px;
+	}//end of profile pic
+	h2{
+		border-top:1px solid black;
+		font-size: 1.5rem;
+	}// end of h2
+	p {
+		width: 80%;
+		padding-left: 20%;
+	}
+	.portfolio {
+		width:40%;
+		background-color:@main-color;
+		padding: 2% 0;
+		border: 2px solid #fde769;
+		margin:3%;
+		a {
+			color: white;
+		}//end of a
+	}//end off portfolio
+}// this end the intro
+//two
+#skills {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		text-align: center;
+		border-bottom: 1px solid grey;
+	}
+	.container {
+		display: flex;
+		justify-content: right;
+		div {
+			text-align: center;
+			width: 40%;
+			padding:5%;
+		}//end of div
+	}//end of container
+	 .borders()
+}//ends sectiontwo skills
+//section three experience
+#experience {
+	.borders();
+	margin-top: 4%;
+	h2 {
+		text-align: center;
+		border-bottom: 1px solid grey;
+	}//end of h2
+}//end of experience
+
+.big-box {
+	.flexbox();
+	flex-direction:row;
+	justify-content: space-evenly;
+	border-bottom: 1px solid yellow;
+
+	h4 {
+		font-size: 1.5rem;
+	}
+	
+	.column-one {
+		width:100%;
+		text-align:center;
+	  }//end of columnone
+	.column-two {
+		width: 25vw;
+	}
+	.column-three {
+		width: 80%;
+		text-align: justify;
+		padding-left: 2%;
+	}
+}//end of bigbox
+footer{
+	.borders();
+	margin:4% 0;
+	text-align:center;
+		h2 {
+			border-bottom: 1px solid grey;
+		}//end of h2
+		div {
+			display:flex;
+			justify-content:center;
+		form {
+			width:80%;
+				input, label, textarea {
+				width:100%;
+				margin:4% 0;
+				} //end of input
+				input, textarea{
+				border:none;
+				border-bottom:3px solid rgb(97, 97, 97);
+				background-color:rgb(255, 255, 255);
+				}//end of textarea
+				button{
+					width:100%;
+					background-color:@main-color;
+					color:white;
+					padding: 2% 0;
+					border: 2px solid #fde769;
+					margin-bottom:3%;
+				  }
+				  button:hover{
+					background-color:@back-color2;
+					color:#00CED1;
+					border:2px solid #00CED1;
+				  }
+			}//end of form
+		}//end off div
+  }//end of footer
+
+  //how can i make the nave scroll down as i am scrolling down
+
+  //media query start here
+@media (max-width:500px) {
+	header {
+		height: 40vh;
+		nav {
+			flex-direction: column;
+			.navbar {
+			flex-direction: column;
+			align-items: center;
+			}//end of nav bar
+		}//end of nav
+	}//end of header
+	.intro {
+		.pic {
+			display: none;
+		}//end of .pic
+	}//end of intro
+	#skills {
+		.container {
+			flex-direction: column;
+			align-items: center;
+			div {
+				width: 100%;
+			}//end of div		
+		}//end of container
+	}//end of skills section
+	#experience {
+		.big-box {
+			flex-direction: column;
+		}//end of big box
+	}//end of exp section
+  }//this closes media

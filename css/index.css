@@ -1,1 +1,357 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'McLaren';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('McLaren'), local('McLaren-Regular'), url(https://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXIeYEV9w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid gray;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  margin: 5%;
+}
+body {
+  font-size: 2.5rem;
+  font-family: 'McLaren', cursive;
+  line-height: 2;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: purple;
+  letter-spacing: 3px;
+  padding: 4% 0;
+}
+p {
+  font-size: 1.5rem;
+}
+section {
+  padding: 4% 0;
+}
+header {
+  height: 20vh;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar :hover {
+  color: purple;
+  background-color: #eeaeca;
+  border-radius: 15px;
+}
+.intro {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+}
+.intro .pic {
+  width: 40vw;
+  border-radius: 20px;
+}
+.intro h2 {
+  border-top: 1px solid black;
+  font-size: 1.5rem;
+}
+.intro p {
+  width: 80%;
+  padding-left: 20%;
+}
+.intro .portfolio {
+  width: 40%;
+  background-color: purple;
+  padding: 2% 0;
+  border: 2px solid #fde769;
+  margin: 3%;
+}
+.intro .portfolio a {
+  color: white;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+}
+#skills h2 {
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+#skills .container {
+  display: flex;
+  justify-content: right;
+}
+#skills .container div {
+  text-align: center;
+  width: 40%;
+  padding: 5%;
+}
+#experience {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+  margin-top: 4%;
+}
+#experience h2 {
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+.big-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 1px solid yellow;
+}
+.big-box h4 {
+  font-size: 1.5rem;
+}
+.big-box .column-one {
+  width: 100%;
+  text-align: center;
+}
+.big-box .column-two {
+  width: 25vw;
+}
+.big-box .column-three {
+  width: 80%;
+  text-align: justify;
+  padding-left: 2%;
+}
+footer {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 3%;
+  background-color: white;
+  margin: 4% 0;
+  text-align: center;
+}
+footer h2 {
+  border-bottom: 1px solid grey;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div form {
+  width: 80%;
+}
+footer div form input,
+footer div form label,
+footer div form textarea {
+  width: 100%;
+  margin: 4% 0;
+}
+footer div form input,
+footer div form textarea {
+  border: none;
+  border-bottom: 3px solid #616161;
+  background-color: #ffffff;
+}
+footer div form button {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  padding: 2% 0;
+  border: 2px solid #fde769;
+  margin-bottom: 3%;
+}
+footer div form button:hover {
+  background-color: #eeaeca;
+  color: #00CED1;
+  border: 2px solid #00CED1;
+}
+@media (max-width: 500px) {
+  header {
+    height: 40vh;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .pic {
+    display: none;
+  }
+  #skills .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills .container div {
+    width: 100%;
+  }
+  #experience .big-box {
+    flex-direction: column;
+  }
+}
